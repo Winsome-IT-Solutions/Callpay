@@ -3,6 +3,7 @@ Color Schemes
 
 lightblue: #3BB6EF
 darkblue: #25326F
+
 */
 
 @font-face {
@@ -63,4 +64,124 @@ button:focus {
   color: #ffffff;
   font-size: 1.1rem;
   cursor: pointer;
+}
+
+/* Promo Cards Style */
+
+#promo-container {
+  margin: 20px 0px;
+}
+
+#promo-header-text {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  background: linear-gradient(to left, #fdc830, #f37335);
+  border-radius: 10px;
+  margin: 0px 20px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.card-header {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* How App Works Styles */
+
+#app-instructions-container {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#screenshots img {
+  width: 300px;
+}
+
+#instruction-header-text {
+  font-size: 1.5rem;
+}
+
+/* Redeem Styles */
+
+#redeem-container {
+  margin: 20px 0;
+}
+
+#redeem-header {
+  font-size: 1.5rem;
+}
+
+.redeem-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redeem-card img {
+  width: 300px;
+}
+
+/* Video Style */
+
+#video-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#video-header {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* App Screenshots */
+
+/* Footer */
+
+#footer {
+  background-color: #25326f;
+  padding: 40px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+#footer-logo {
+  width: 200px;
+}
+
+#social-media-icons {
+  margin: 30px 0;
+}
+
+#social-media-icons i:not(:last-child) {
+  margin-right: 40px;
+}
+
+#social-media-icons i {
+  background-color: #ffffff;
+  padding: 10px;
+  font-size: 2rem;
+  color: #3bb6ef;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#social-media-icons i:hover {
+  background-color: #3bb6ef;
+  color: #ffffff;
 }

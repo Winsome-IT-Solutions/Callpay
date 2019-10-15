@@ -17,7 +17,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="js/showcase-slider//showcase-slider.css" />
+    <link rel="stylesheet" href="js/showcase-slider/showcase-slider.css" />
+    <link rel="stylesheet" href="js/vertical-slider/vertical-slider.css" />
 
     <!-- Template's Stylesheets END -->
   </head>
@@ -40,13 +41,27 @@
 
       <!-- Showcase Slider -->
 
-      <div id="slider-container">
+      <div id="showcase-slider">
         <i class="material-icons arrow" id="arrow-left">
           chevron_left
         </i>
-        <div style="width: 100%; position: relative;">
+        <div id="slider-container">
           <div id="slider">
             <div class="slide slide1">
+              <div class="description">
+                <p id="header-text">
+                  Awesome App for You <br />
+                  to Earn Easily
+                </p>
+                <p id="subheader-text">
+                  Description Text comes over here to Earn Easily
+                </p>
+                <img
+                  src="img/google-play.png"
+                  alt="Get it from Google Play"
+                  class="google-play-banner"
+                />
+              </div>
               <img src="img/Screen Designs-HiRes-02.png" />
             </div>
             <div class="slide slide2">
@@ -63,7 +78,234 @@
       </div>
 
       <!-- Showcase Slider END -->
+
+      <!-- Promo Cards -->
+
+      <div id="promo-container">
+        <p id="promo-header-text">Exciting Features!</p>
+        <div class="card-group">
+          <div class="card">
+            <p class="card-header">Lorem Ipsum</p>
+            <p class="card-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi
+              perferendis sapiente minus ex harum voluptates. Repellendus,
+              debitis numquam ea officiis ad, soluta eos accusantium aliquam
+              inventore voluptatem, eligendi laborum!
+            </p>
+          </div>
+          <div class="card">
+            <p class="card-header">Lorem Ipsum</p>
+            <p class="card-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi
+              perferendis sapiente minus ex harum voluptates. Repellendus,
+              debitis numquam ea officiis ad, soluta eos accusantium aliquam
+              inventore voluptatem, eligendi laborum!
+            </p>
+          </div>
+          <div class="card">
+            <p class="card-header">Lorem Ipsum</p>
+            <p class="card-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi
+              perferendis sapiente minus ex harum voluptates. Repellendus,
+              debitis numquam ea officiis ad, soluta eos accusantium aliquam
+              inventore voluptatem, eligendi laborum!
+            </p>
+          </div>
+          <div class="card">
+            <p class="card-header">Lorem Ipsum</p>
+            <p class="card-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi
+              perferendis sapiente minus ex harum voluptates. Repellendus,
+              debitis numquam ea officiis ad, soluta eos accusantium aliquam
+              inventore voluptatem, eligendi laborum!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Promo Cards END -->
+
+      <!-- How App Works -->
+
+      <div id="app-instructions-container">
+        <div id="screenshots">
+          <img src="img/Screen Designs-HiRes-10.png" />
+        </div>
+        <div id="app=instructions">
+          <div id="instruction-header-text">How Does This App Work?</div>
+
+          <!-- Vertical Slider -->
+
+          <div id="vertical-slider-wrapper">
+            <i class="material-icons arrow" id="arrow-up">
+              keyboard_arrow_up
+            </i>
+            <div id="vertical-slider-container">
+              <div id="vertical-slider">
+                <div class="vertical-slide">
+                  <i class="material-icons">
+                    attach_money
+                  </i>
+                  <div class="instruction-card">
+                    <p class="instruction-header">Step 1</p>
+                    <p class="instruction">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Ipsum illum atque voluptatum cum recusandae aliquam
+                      similique est fuga tempora maxime fugiat culpa, libero ex!
+                      Dolores, eaque enim! Sint, hic rerum!
+                    </p>
+                  </div>
+                </div>
+                <div class="vertical-slide">
+                  <i class="material-icons">
+                    mobile_screen_share
+                  </i>
+                  <div class="instruction-card">
+                    <p class="instruction-header">Step 1</p>
+                    <p class="instruction">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Ipsum illum atque voluptatum cum recusandae aliquam
+                      similique est fuga tempora maxime fugiat culpa, libero ex!
+                      Dolores, eaque enim! Sint, hic rerum!
+                    </p>
+                  </div>
+                </div>
+                <div class="vertical-slide">
+                  <i class="material-icons">
+                    message
+                  </i>
+                  <div class="instruction-card">
+                    <p class="instruction-header">Step 1</p>
+                    <p class="instruction">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Ipsum illum atque voluptatum cum recusandae aliquam
+                      similique est fuga tempora maxime fugiat culpa, libero ex!
+                      Dolores, eaque enim! Sint, hic rerum!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="material-icons arrow" id="arrow-down">
+              keyboard_arrow_down
+            </i>
+          </div>
+
+          <!-- Vertical Slider END -->
+        </div>
+      </div>
+
+      <!-- How App Works END -->
+
+      <!-- How To Redeem -->
+
+      <div id="redeem-container">
+        <p id="redeem-header">How To Redeem</p>
+        <div class="redeem-card">
+          <div class="redeem-card-text">
+            <p class="redeem-header-text">Step 1: Heading Here</p>
+            <p class="redeem-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+              deleniti molestias enim animi minima? Eos vero fugiat mollitia
+              vitae aspernatur perspiciatis! Voluptates inventore quos
+              reprehenderit nesciunt perferendis necessitatibus error dolorem?
+            </p>
+          </div>
+          <img src="img/Screen Designs-HiRes-11.png" />
+        </div>
+        <div class="redeem-card">
+          <img src="img/Screen Designs-HiRes-12.png" />
+          <div class="redeem-card-text">
+            <p class="redeem-header-text">Step 1: Heading Here</p>
+            <p class="redeem-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+              deleniti molestias enim animi minima? Eos vero fugiat mollitia
+              vitae aspernatur perspiciatis! Voluptates inventore quos
+              reprehenderit nesciunt perferendis necessitatibus error dolorem?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- How To Redeem END -->
+
+      <!-- Video Player -->
+
+      <div id="video-container">
+        <p id="video-header">Video Tutorial</p>
+        <iframe
+          width="560"
+          height="315"
+          src="//www.youtube.com/embed/34BnRBt8wOU"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- Video Player END -->
+
+      <!-- App Screenshots -->
+      <p style="font-size: 1.5rem; text-align: center; margin: 20px 0;">
+        App Screenshots
+      </p>
+      <div id="showcase-slider">
+        <i class="material-icons arrow" id="arrow-left">
+          chevron_left
+        </i>
+        <div id="slider-container">
+          <div id="slider">
+            <div class="slide slide1">
+              <div class="description">
+                <p id="header-text">
+                  Awesome App for You <br />
+                  to Earn Easily
+                </p>
+                <p id="subheader-text">
+                  Description Text comes over here to Earn Easily
+                </p>
+                <img
+                  src="img/google-play.png"
+                  alt="Get it from Google Play"
+                  class="google-play-banner"
+                />
+              </div>
+              <img src="img/Screen Designs-HiRes-02.png" />
+            </div>
+            <div class="slide slide2">
+              <img src="img/Screen Designs-HiRes-10.png" />
+            </div>
+            <div class="slide slide3">
+              <img src="img/Screen Designs-HiRes-12.png" />
+            </div>
+          </div>
+        </div>
+        <i class="material-icons arrow" id="arrow-right">
+          chevron_right
+        </i>
+      </div>
+
+      <!-- App Screenshots END -->
     </div>
+
+    <!-- Footer -->
+
+    <div id="footer">
+        <img src="img/CallPay_Logo_-10.png" id="footer-logo" />
+        <div id="social-media-icons">
+          <i class="material-icons">
+            person
+          </i>
+          <i class="material-icons">
+            person
+          </i>
+          <i class="material-icons">
+            person
+          </i>
+        </div>
+        <p>&copy; Copyright Callpay 2019</p>
+      </div>
+
+      <!-- Footer END -->
 
     <!-- Template's Scripts -->
 
