@@ -12,6 +12,10 @@
 
     <!-- Template's Stylesheets -->
 
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="js/showcase-slider//showcase-slider.css" />
 
@@ -36,25 +40,26 @@
 
       <!-- Showcase Slider -->
 
-      <div class="container">
-        <div class="slide-img" id="one">
-          <img src="img/callpay - 09.png" />
-
-          <label class="prev" for="i2"><span></span></label>
-          <label class="next" for="i2"><span></span></label>
+      <div id="slider-container">
+        <i class="material-icons arrow" id="arrow-left">
+          chevron_left
+        </i>
+        <div style="width: 100%; position: relative;">
+          <div id="slider">
+            <div class="slide slide1">
+              <img src="img/Screen Designs-HiRes-02.png" />
+            </div>
+            <div class="slide slide2">
+              <img src="img/Screen Designs-HiRes-10.png" />
+            </div>
+            <div class="slide slide3">
+              <img src="img/Screen Designs-HiRes-12.png" />
+            </div>
+          </div>
         </div>
-
-        <div class="slide-img" id="two">
-          <img src="img/callpay -11.png" />
-
-          <label class="prev" for="i1"><span></span></label>
-          <label class="next" for="i1"><span></span></label>
-        </div>
-
-        <div id="nav-slide">
-          <label for="i1" class="dots" id="dot1"></label>
-          <label for="i2" class="dots" id="dot2"></label>
-        </div>
+        <i class="material-icons arrow" id="arrow-right">
+          chevron_right
+        </i>
       </div>
 
       <!-- Showcase Slider END -->
@@ -62,7 +67,8 @@
 
     <!-- Template's Scripts -->
 
-    <script src="js/showcase-slider/showcase-slider.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- <script src="js/showcase-slider/showcase-slider.js"></script> -->
 
     <!-- Template's Scripts END  -->
   </body>
