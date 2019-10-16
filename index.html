@@ -12,9 +12,13 @@
 
     <!-- Template's Stylesheets -->
 
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="js/showcase-slider/showcase-slider.css" />
@@ -26,7 +30,7 @@
     <div id="container">
       <div id="header">
         <img
-          src="img/CallPay_Logo_-09.png"
+          src="img/CallPay_Logo_-10.png"
           alt="CallPay Logo"
           id="brand-logo"
         />
@@ -42,8 +46,7 @@
       <!-- Showcase Slider -->
 
       <div id="showcase-slider">
-        <i class="material-icons arrow" id="arrow-left">
-          chevron_left
+        <i class="fa fa-chevron-left arrow" id="arrow-left" aria-hidden="true">
         </i>
         <div id="slider-container">
           <div id="slider">
@@ -65,15 +68,27 @@
               <img src="img/Screen Designs-HiRes-02.png" />
             </div>
             <div class="slide slide2">
-              <img src="img/Screen Designs-HiRes-10.png" />
+              <img src="img/Screen Designs-HiRes-12.png" />
             </div>
             <div class="slide slide3">
-              <img src="img/Screen Designs-HiRes-12.png" />
+              <iframe
+                width="80%"
+                !important
+                height="80%"
+                !important
+                src="//www.youtube.com/embed/EOfCEhWq8sg"
+                frameborder="0"
+                allowfullscreen
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              ></iframe>
             </div>
           </div>
         </div>
-        <i class="material-icons arrow" id="arrow-right">
-          chevron_right
+        <i
+          class="fa fa-chevron-right arrow"
+          id="arrow-right"
+          aria-hidden="true"
+        >
         </i>
       </div>
 
@@ -84,7 +99,10 @@
       <div id="promo-container">
         <p id="promo-header-text">Exciting Features!</p>
         <div class="card-group">
-          <div class="card">
+          <div
+            class="card"
+            style="background: linear-gradient(to left, #fdc830, #f37335); top: -20px"
+          >
             <p class="card-header">Lorem Ipsum</p>
             <p class="card-description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi
@@ -93,7 +111,10 @@
               inventore voluptatem, eligendi laborum!
             </p>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            style="background: linear-gradient(to right, #56ab2f, #a8e063); top: 50px"
+          >
             <p class="card-header">Lorem Ipsum</p>
             <p class="card-description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi
@@ -102,7 +123,10 @@
               inventore voluptatem, eligendi laborum!
             </p>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            style="background: linear-gradient(to left, #56ccf2, #2f80ed); top: 50px"
+          >
             <p class="card-header">Lorem Ipsum</p>
             <p class="card-description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi
@@ -111,7 +135,10 @@
               inventore voluptatem, eligendi laborum!
             </p>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            style="background: linear-gradient(to right, #c0392b, #8e44ad); top: -20px"
+          >
             <p class="card-header">Lorem Ipsum</p>
             <p class="card-description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi
@@ -137,15 +164,12 @@
           <!-- Vertical Slider -->
 
           <div id="vertical-slider-wrapper">
-            <i class="material-icons arrow" id="arrow-up">
-              keyboard_arrow_up
+            <i class="fa fa-chevron-up arrow" aria-hidden="true" id="arrow-up">
             </i>
             <div id="vertical-slider-container">
               <div id="vertical-slider">
                 <div class="vertical-slide">
-                  <i class="material-icons">
-                    attach_money
-                  </i>
+                  <i class="fa fa-credit-card" aria-hidden="true"> </i>
                   <div class="instruction-card">
                     <p class="instruction-header">Step 1</p>
                     <p class="instruction">
@@ -157,11 +181,9 @@
                   </div>
                 </div>
                 <div class="vertical-slide">
-                  <i class="material-icons">
-                    mobile_screen_share
-                  </i>
+                  <i class="fa fa-picture-o" aria-hidden="true"> </i>
                   <div class="instruction-card">
-                    <p class="instruction-header">Step 1</p>
+                    <p class="instruction-header">Step 2</p>
                     <p class="instruction">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Ipsum illum atque voluptatum cum recusandae aliquam
@@ -171,11 +193,9 @@
                   </div>
                 </div>
                 <div class="vertical-slide">
-                  <i class="material-icons">
-                    message
-                  </i>
+                  <i class="fa fa-comments-o" aria-hidden="true"> </i>
                   <div class="instruction-card">
-                    <p class="instruction-header">Step 1</p>
+                    <p class="instruction-header">Step 3</p>
                     <p class="instruction">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Ipsum illum atque voluptatum cum recusandae aliquam
@@ -186,8 +206,11 @@
                 </div>
               </div>
             </div>
-            <i class="material-icons arrow" id="arrow-down">
-              keyboard_arrow_down
+            <i
+              class="fa fa-chevron-down arrow"
+              aria-hidden="true"
+              id="arrow-down"
+            >
             </i>
           </div>
 
@@ -201,28 +224,30 @@
 
       <div id="redeem-container">
         <p id="redeem-header">How To Redeem</p>
-        <div class="redeem-card">
-          <div class="redeem-card-text">
-            <p class="redeem-header-text">Step 1: Heading Here</p>
-            <p class="redeem-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-              deleniti molestias enim animi minima? Eos vero fugiat mollitia
-              vitae aspernatur perspiciatis! Voluptates inventore quos
-              reprehenderit nesciunt perferendis necessitatibus error dolorem?
-            </p>
+        <div id="redeem-card-group">
+          <div class="redeem-card">
+            <div class="redeem-card-text">
+              <p class="redeem-header-text">Step 1: Heading Here</p>
+              <p class="redeem-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+                deleniti molestias enim animi minima? Eos vero fugiat mollitia
+                vitae aspernatur perspiciatis! Voluptates inventore quos
+                reprehenderit nesciunt perferendis necessitatibus error dolorem?
+              </p>
+            </div>
+            <img src="img/Screen Designs-HiRes-11.png" />
           </div>
-          <img src="img/Screen Designs-HiRes-11.png" />
-        </div>
-        <div class="redeem-card">
-          <img src="img/Screen Designs-HiRes-12.png" />
-          <div class="redeem-card-text">
-            <p class="redeem-header-text">Step 1: Heading Here</p>
-            <p class="redeem-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-              deleniti molestias enim animi minima? Eos vero fugiat mollitia
-              vitae aspernatur perspiciatis! Voluptates inventore quos
-              reprehenderit nesciunt perferendis necessitatibus error dolorem?
-            </p>
+          <div class="redeem-card">
+            <img src="img/Screen Designs-HiRes-12.png" />
+            <div class="redeem-card-text">
+              <p class="redeem-header-text">Step 2: Heading Here</p>
+              <p class="redeem-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+                deleniti molestias enim animi minima? Eos vero fugiat mollitia
+                vitae aspernatur perspiciatis! Voluptates inventore quos
+                reprehenderit nesciunt perferendis necessitatibus error dolorem?
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -234,8 +259,10 @@
       <div id="video-container">
         <p id="video-header">Video Tutorial</p>
         <iframe
-          width="560"
-          height="315"
+          width="80%"
+          !important
+          height="500"
+          !important
           src="//www.youtube.com/embed/34BnRBt8wOU"
           frameborder="0"
           allowfullscreen
@@ -245,43 +272,52 @@
       <!-- Video Player END -->
 
       <!-- App Screenshots -->
-      <p style="font-size: 1.5rem; text-align: center; margin: 20px 0;">
-        App Screenshots
-      </p>
-      <div id="showcase-slider">
-        <i class="material-icons arrow" id="arrow-left">
-          chevron_left
-        </i>
-        <div id="slider-container">
-          <div id="slider">
-            <div class="slide slide1">
-              <div class="description">
-                <p id="header-text">
-                  Awesome App for You <br />
-                  to Earn Easily
-                </p>
-                <p id="subheader-text">
-                  Description Text comes over here to Earn Easily
-                </p>
-                <img
-                  src="img/google-play.png"
-                  alt="Get it from Google Play"
-                  class="google-play-banner"
-                />
+
+      <div id="app-screenshots-container">
+        <p id="app-screenshots-header">
+          App Screenshots
+        </p>
+        <div id="showcase-slider">
+          <i
+            class="fa fa-chevron-left arrow"
+            aria-hidden="true"
+            id="arrow-left"
+          >
+          </i>
+          <div id="slider-container">
+            <div id="slider">
+              <div class="slide slide1">
+                <div class="description">
+                  <p id="header-text">
+                    Awesome App for You <br />
+                    to Earn Easily
+                  </p>
+                  <p id="subheader-text">
+                    Description Text comes over here to Earn Easily
+                  </p>
+                  <img
+                    src="img/google-play.png"
+                    alt="Get it from Google Play"
+                    class="google-play-banner"
+                  />
+                </div>
+                <img src="img/Screen Designs-HiRes-02.png" />
               </div>
-              <img src="img/Screen Designs-HiRes-02.png" />
-            </div>
-            <div class="slide slide2">
-              <img src="img/Screen Designs-HiRes-10.png" />
-            </div>
-            <div class="slide slide3">
-              <img src="img/Screen Designs-HiRes-12.png" />
+              <div class="slide slide2">
+                <img src="img/Screen Designs-HiRes-10.png" />
+              </div>
+              <div class="slide slide3">
+                <img src="img/Screen Designs-HiRes-12.png" />
+              </div>
             </div>
           </div>
+          <i
+            class="fa fa-chevron-right arrow"
+            aria-hidden="true"
+            id="arrow-right"
+          >
+          </i>
         </div>
-        <i class="material-icons arrow" id="arrow-right">
-          chevron_right
-        </i>
       </div>
 
       <!-- App Screenshots END -->
@@ -290,22 +326,16 @@
     <!-- Footer -->
 
     <div id="footer">
-        <img src="img/CallPay_Logo_-10.png" id="footer-logo" />
-        <div id="social-media-icons">
-          <i class="material-icons">
-            person
-          </i>
-          <i class="material-icons">
-            person
-          </i>
-          <i class="material-icons">
-            person
-          </i>
-        </div>
-        <p>&copy; Copyright Callpay 2019</p>
+      <img src="img/CallPay_Logo_-10.png" id="footer-logo" />
+      <div id="social-media-icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"> </i>
+        <i class="fa fa-instagram" aria-hidden="true"> </i>
       </div>
+      <p>&copy; Copyright CallPay 2019</p>
+    </div>
 
-      <!-- Footer END -->
+    <!-- Footer END -->
 
     <!-- Template's Scripts -->
 

@@ -8,19 +8,20 @@
 
 .arrow {
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 1.5rem;
+  opacity: 0.5;
 }
 
 #vertical-slider-container {
   width: 100%;
   position: relative;
-  height: 100%;
+  /* height: 300%; */
   overflow: hidden;
   margin: 20px 0;
 }
 
 #vertical-slider {
-  height: 300%;
+  /* height: 300%; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -30,30 +31,22 @@
 
 .vertical-slide {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   align-items: center;
+  margin: 20px 0;
 }
 
 .vertical-slide i {
   font-size: 4rem;
-}
-
-.description #header-text {
-  font-size: 2rem;
-  text-align: left;
-  margin-bottom: 20px;
-  background-color: #3bb6ef;
-  color: #ffffff;
-  padding: 10px;
-  width: 400px;
-}
-
-.description img.google-play-banner {
-  width: 200px;
-  margin-top: 50px;
+  margin-right: 20px;
 }
 
 .vertical-slide img {
   width: 300px;
+}
+
+.instruction-header {
+  font-size: 1.5rem;
+  color: #3bb6ef;
 }

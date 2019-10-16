@@ -7,7 +7,8 @@
 
 .arrow {
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 1.5rem;
+  opacity: 0.5;
 }
 
 #slider-container {
@@ -28,22 +29,30 @@
 
 .slide {
   width: 100%;
-}
-
-.slide1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.slide2,
+.slide3 {
+  justify-content: center;
 }
 
 .description #header-text {
   font-size: 2rem;
   text-align: left;
   margin-bottom: 20px;
-  background-color: #3bb6ef;
+  background: linear-gradient(to right, #00b4db, #0083b0);
   color: #ffffff;
-  padding: 10px;
+  padding: 20px;
   width: 400px;
+  border-radius: 10px;
+  font-family: "Mark-Bold";
+}
+
+#subheader-text {
+  color: #ffffff;
 }
 
 .description img.google-play-banner {

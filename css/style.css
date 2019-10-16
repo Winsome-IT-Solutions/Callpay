@@ -19,7 +19,14 @@ darkblue: #25326F
 * {
   margin: 0;
   padding: 0;
-  font-family: "Mark-Bold";
+  font-family: "Mark-Regular";
+}
+
+body {
+  background: url("../img/banner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 button:focus {
@@ -34,8 +41,9 @@ button:focus {
 #header {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 40px 0;
   align-items: center;
+  color: #ffffff;
 }
 
 #brand-logo {
@@ -60,8 +68,8 @@ button:focus {
   border: none;
   border-radius: 100px;
   padding: 10px 20px;
-  background-color: #3bb6ef;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #3bb6ef;
   font-size: 1.1rem;
   cursor: pointer;
 }
@@ -69,14 +77,19 @@ button:focus {
 /* Promo Cards Style */
 
 #promo-container {
-  margin: 20px 0px;
+  margin: 100px 0px;
+}
+
+#promo-header-text::before {
+  content: "";
+  border-left: 5px solid #3bb6ef;
+  margin-right: 10px;
 }
 
 #promo-header-text {
-  text-transform: uppercase;
   font-size: 2.5rem;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Mark-Bold";
 }
 
 .card-group {
@@ -86,11 +99,12 @@ button:focus {
 }
 
 .card {
-  background: linear-gradient(to left, #fdc830, #f37335);
   border-radius: 10px;
   margin: 0px 20px;
   color: #ffffff;
-  padding: 10px;
+  padding: 30px;
+  height: 300px;
+  position: relative;
 }
 
 .card-header {
@@ -100,29 +114,80 @@ button:focus {
 
 /* How App Works Styles */
 
+#app-instructions-container::before {
+  content: "";
+  background-color: #f6f9fc;
+  position: absolute;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  z-index: -1;
+  transform: rotate(-12deg);
+}
+
 #app-instructions-container {
-  margin: 20px 0px;
+  margin: 100px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 #screenshots img {
   width: 300px;
+  margin-right: 50px;
+}
+
+#instruction-header-text::after {
+  content: "";
+  border-left: 5px solid #3bb6ef;
+  margin-left: 10px;
 }
 
 #instruction-header-text {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  font-family: "Mark-Bold";
+  text-align: right;
 }
 
 /* Redeem Styles */
 
 #redeem-container {
-  margin: 20px 0;
+  margin: 150px 0;
+}
+
+#redeem-header::before {
+  content: "";
+  border-left: 5px solid #3bb6ef;
+  margin-right: 10px;
 }
 
 #redeem-header {
+  font-size: 2.5rem;
+  font-family: "Mark-Bold";
+}
+
+.redeem-header-text {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  padding: 20px;
   font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.redeem-card:nth-child(odd) .redeem-header-text {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.redeem-card:nth-child(even) .redeem-header-text {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.redeem-description {
+  width: 50%;
+  padding-left: 20px;
 }
 
 .redeem-card {
@@ -137,17 +202,53 @@ button:focus {
 
 /* Video Style */
 
+#video-container::before {
+  content: "";
+  background-color: #f6f9fc;
+  position: absolute;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  z-index: -1;
+  transform: rotate(-12deg);
+}
+
 #video-container {
-  margin: 20px 0;
+  margin: 100px 0;
   text-align: center;
+  position: relative;
+}
+
+#video-header::after {
+  content: "";
+  border-left: 5px solid #3bb6ef;
+  margin-left: 10px;
 }
 
 #video-header {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-family: "Mark-Bold";
+  margin-bottom: 50px;
+  text-align: right;
 }
 
 /* App Screenshots */
+
+#app-screenshots-container {
+  margin: 150px 0;
+}
+
+#app-screenshots-header::before {
+  content: "";
+  border-left: 5px solid #3bb6ef;
+  margin-right: 10px;
+}
+
+#app-screenshots-header {
+  font-size: 2.5rem;
+  font-family: "Mark-Bold";
+  margin-bottom: 50px;
+}
 
 /* Footer */
 
@@ -173,12 +274,16 @@ button:focus {
 
 #social-media-icons i {
   background-color: #ffffff;
-  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2rem;
   color: #3bb6ef;
   border-radius: 100px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  width: 50px;
+  height: 50px;
 }
 
 #social-media-icons i:hover {
