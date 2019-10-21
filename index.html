@@ -17,9 +17,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="js/loaders/loader.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" href="js/slider/showcase-slider.css">
+    <link rel="stylesheet" href="js/slider/showcase-slider.css" />
+    <link rel="stylesheet" href="js/slider/vertical-slider.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Template's Stylesheets END -->
@@ -56,47 +58,57 @@
 
       <!-- Showcase Slider -->
 
-      <div class="showcase-slider">
-          <i class="fa fa-chevron-left arrow prev" aria-hidden="true" onclick='plusSlides(-1)'></i>
-        <div class="slideshow-inner">
-          <div class="slide slide1">
-            <div class="description">
-              <p id="header-text">
-                Awesome App for You <br />
-                to Earn Easily
-              </p>
-              <p id="subheader-text">
-                Description Text comes over here to Earn Easily
-              </p>
-              <img
-                src="img/google-play.png"
-                alt="Get it from Google Play"
-                class="google-play-banner"
-              />
+      <div id="showcase-slider">
+        <i class="fa fa-chevron-left arrow" id="arrow-left" aria-hidden="true">
+        </i>
+        <div id="slider-container">
+          <div id="slider">
+            <div class="slide slide1">
+              <div class="description">
+                <p id="header-text">
+                  The Moneymaking App
+                </p>
+                <!-- <p id="subheader-text">
+                  Description Text comes over here to Earn Easily
+                </p> -->
+                <img
+                  src="img/google-play.png"
+                  alt="Get it from Google Play"
+                  class="google-play-banner"
+                />
+              </div>
+              <img src="img/01.png" />
             </div>
-            <img src="img/01.png" />
+            <div class="slide slide2">
+              <img src="img/11.png" />
+            </div>
+            <div class="slide slide3">
+              <iframe
+                width="80%"
+                !important
+                height="80%"
+                !important
+                src="//www.youtube.com/embed/EOfCEhWq8sg"
+                frameborder="0"
+                allowfullscreen
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              ></iframe>
+            </div>
           </div>
-          <div class="slide slide2">
-            <iframe
-            width="80%"
-            !important
-            height="80%"
-            !important
-            src="//www.youtube.com/embed/EOfCEhWq8sg"
-            frameborder="0"
-            allowfullscreen
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          ></iframe>
-          </div>
-          </div>
-          <i class="fa fa-chevron-right arrow next" aria-hidden="true" onclick='plusSlides(1)'></i>
         </div>
+        <i
+          class="fa fa-chevron-right arrow"
+          id="arrow-right"
+          aria-hidden="true"
+        >
+        </i>
+      </div>
 
       <!-- Showcase Slider END -->
 
       <!-- Promo Cards -->
 
-      <div id="promo-container">
+      <div id="promo-container" data-aos="fade-up">
         <h2>Exciting Features!</h2>
         <div class="card-group">
           <div
@@ -105,12 +117,13 @@
             data-tilt
             data-tilt-scale="1.1"
           >
-            <p class="card-header">Lorem Ipsum</p>
+            <p class="card-header">It's Completely Free</p>
             <p class="card-description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi
-              perferendis sapiente minus ex harum voluptates. Repellendus,
-              debitis numquam ea officiis ad, soluta eos accusantium aliquam
-              inventore voluptatem, eligendi laborum!
+              Callpay is a totally free to use
+Application and readily available on Google Play. Just
+a click away to claim, so hit the download button
+now and make your smartphone a money making
+device.
             </p>
           </div>
           <div
@@ -119,12 +132,13 @@
             data-tilt
             data-tilt-scale="1.1"
           >
-            <p class="card-header">Lorem Ipsum</p>
+            <p class="card-header">Earn Money With Ease</p>
             <p class="card-description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi
-              perferendis sapiente minus ex harum voluptates. Repellendus,
-              debitis numquam ea officiis ad, soluta eos accusantium aliquam
-              inventore voluptatem, eligendi laborum!
+              We help you earn money
+when you receive calls, each incoming call brings you
+money. Earn money for taking actions on the ads
+shown on your screen every time you receive calls on
+your Smartphone or smart devices.
             </p>
           </div>
           <div
@@ -133,12 +147,13 @@
             data-tilt
             data-tilt-scale="1.1"
           >
-            <p class="card-header">Lorem Ipsum</p>
+            <p class="card-header">100% Risk Free</p>
             <p class="card-description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi
-              perferendis sapiente minus ex harum voluptates. Repellendus,
-              debitis numquam ea officiis ad, soluta eos accusantium aliquam
-              inventore voluptatem, eligendi laborum!
+              CallPay is a highly secured and end
+to end encrypted application. All your personal and
+financial information are safe. All your earnings are
+redeemed in your Paytm wallet with a daily
+withdrawal limit of Rs. 100/-.
             </p>
           </div>
           <div
@@ -147,12 +162,12 @@
             data-tilt
             data-tilt-scale="1.1"
           >
-            <p class="card-header">Lorem Ipsum</p>
+            <p class="card-header">100% Friendly</p>
             <p class="card-description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi
-              perferendis sapiente minus ex harum voluptates. Repellendus,
-              debitis numquam ea officiis ad, soluta eos accusantium aliquam
-              inventore voluptatem, eligendi laborum!
+              Which is completely redeemable
+and can be used for purchasing anything. You can
+withdraw your cash in the batches of INR 50 or 100
+to your PayTM Wallet.
             </p>
           </div>
         </div>
@@ -163,63 +178,60 @@
       <!-- How App Works -->
 
       <div id="app-instructions-container">
-        <div id="screenshots">
+        <div id="screenshots" data-aos="fade-right">
           <img src="img/09.png" />
         </div>
-        <div id="app=instructions">
+        <div id="app-instructions" data-aos="fade-left">
           <h2>How Does This App Work?</h2>
 
           <!-- Vertical Slider -->
 
-          <div id="vertical-slider-wrapper">
-            <i class="fa fa-chevron-up arrow" aria-hidden="true" id="arrow-up">
-            </i>
-            <div id="vertical-slider-container">
-              <div id="vertical-slider">
-                <div class="vertical-slide">
-                  <i class="fa fa-credit-card" aria-hidden="true"> </i>
-                  <div class="instruction-card">
-                    <p class="instruction-header">Step 1</p>
-                    <p class="instruction">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Ipsum illum atque voluptatum cum recusandae aliquam
-                      similique est fuga tempora maxime fugiat culpa, libero ex!
-                      Dolores, eaque enim! Sint, hic rerum!
-                    </p>
-                  </div>
-                </div>
-                <div class="vertical-slide">
-                  <i class="fa fa-picture-o" aria-hidden="true"> </i>
-                  <div class="instruction-card">
-                    <p class="instruction-header">Step 2</p>
-                    <p class="instruction">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Ipsum illum atque voluptatum cum recusandae aliquam
-                      similique est fuga tempora maxime fugiat culpa, libero ex!
-                      Dolores, eaque enim! Sint, hic rerum!
-                    </p>
-                  </div>
-                </div>
-                <div class="vertical-slide">
-                  <i class="fa fa-comments-o" aria-hidden="true"> </i>
-                  <div class="instruction-card">
-                    <p class="instruction-header">Step 3</p>
-                    <p class="instruction">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Ipsum illum atque voluptatum cum recusandae aliquam
-                      similique est fuga tempora maxime fugiat culpa, libero ex!
-                      Dolores, eaque enim! Sint, hic rerum!
-                    </p>
-                  </div>
-                </div>
+          <div id="content">
+            <div id="content-left">
+              <label for="one"
+                ><i class="fa fa-credit-card current" aria-hidden="true"></i
+              ></label>
+              <label for="two"
+                ><i class="fa fa-picture-o" aria-hidden="true"></i
+              ></label>
+              <label for="three"
+                ><i class="fa fa-comments-o" aria-hidden="true"></i
+              ></label>
+            </div>
+            <div id="content-right">
+              <input id="one" name="slide" type="radio" />
+              <input id="two" name="slide" type="radio" />
+              <input id="three" name="slide" type="radio" />
+
+              <div id="push"></div>
+              <div class="slide">
+                <p class="instruction-header">Step 1</p>
+                <p class="instruction">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Ipsum illum atque voluptatum cum recusandae aliquam similique
+                  est fuga tempora maxime fugiat culpa, libero ex! Dolores,
+                  eaque enim! Sint, hic rerum!
+                </p>
+              </div>
+              <div class="slide">
+                <p class="instruction-header">Step 2</p>
+                <p class="instruction">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Ipsum illum atque voluptatum cum recusandae aliquam similique
+                  est fuga tempora maxime fugiat culpa, libero ex! Dolores,
+                  eaque enim! Sint, hic rerum!
+                </p>
+              </div>
+              <div class="slide">
+                <p class="instruction-header">Step 3</p>
+                <p class="instruction">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Ipsum illum atque voluptatum cum recusandae aliquam similique
+                  est fuga tempora maxime fugiat culpa, libero ex! Dolores,
+                  eaque enim! Sint, hic rerum!
+                </p>
               </div>
             </div>
-            <i
-              class="fa fa-chevron-down arrow"
-              aria-hidden="true"
-              id="arrow-down"
-            >
-            </i>
           </div>
 
           <!-- Vertical Slider END -->
@@ -233,7 +245,7 @@
       <div id="redeem-container">
         <h2>How To Redeem</h2>
         <div id="redeem-card-group">
-          <div class="redeem-card">
+          <div class="redeem-card" data-aos="fade-up-right">
             <div class="redeem-card-text">
               <p class="redeem-header-text">Step 1: Heading Here</p>
               <p class="redeem-description">
@@ -245,7 +257,7 @@
             </div>
             <img src="img/10.png" />
           </div>
-          <div class="redeem-card">
+          <div class="redeem-card" data-aos="fade-up-left">
             <img src="img/11.png" />
             <div class="redeem-card-text">
               <p class="redeem-header-text">Step 2: Heading Here</p>
@@ -264,7 +276,7 @@
 
       <!-- Video Player -->
 
-      <div id="video-container">
+      <div id="video-container" data-aos="zoom-in-up">
         <h2>Video Tutorial</h2>
         <iframe
           width="80%"
@@ -281,7 +293,7 @@
 
       <!-- App Screenshots -->
 
-      <div id="app-screenshots-container">
+      <div id="app-screenshots-container" data-aos="fade-up">
         <h2>App Screenshots</h2>
         <div class="center-slider slider">
           <img src="img/01.png" class="slide" />
@@ -352,21 +364,27 @@
       </div>
     </div>
 
+    <a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+
     <!-- Footer END -->
 
     <!-- Template's Scripts -->
 
-    <script src="js/loaders/loader.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <script src="js/loaders/loader.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/slider/slider.js"></script>
-    <script src='js/slider/showcase-slider.js'></script>
+    <script src="js/slider/showcase-slider.js"></script>
+    <script src="js/slider/vertical-slider.js"></script>
 
     <!-- Template's Scripts END  -->
   </body>

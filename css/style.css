@@ -42,6 +42,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  position: relative;
 }
 
 button:focus {
@@ -128,6 +129,7 @@ button:focus {
 .card-header {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 /* How App Works Styles */
@@ -153,7 +155,6 @@ button:focus {
 
 #screenshots img {
   width: 300px;
-  margin-right: 50px;
 }
 
 #app-instructions-container h2::after {
@@ -168,6 +169,10 @@ button:focus {
   font-size: 2rem;
   font-family: "Oswald-Regular";
   font-weight: 300;
+}
+
+#app-instructions {
+  width: 100%;
 }
 
 /* Redeem Styles */
@@ -413,4 +418,23 @@ button:focus {
 #footer-bottom p:last-child:hover {
   color: #ffffff;
   text-decoration: underline;
+}
+
+.scrollup {
+  z-index: 999;
+  right: 2rem;
+  bottom: 1rem;
+  display: none;
+  width: 3.625rem;
+  height: 3.625rem;
+  border-radius: 1.875rem;
+  border-top-left-radius: 1.875rem;
+  border-top-right-radius: 1.875rem;
+  border-bottom-right-radius: 1.875rem;
+  border-bottom-left-radius: 1.875rem;
+  background: #000 url(../img/up-arrow.png) no-repeat center 47%;
+  background-size: auto;
+  background-size: 2.125rem 2.125rem;
+  text-indent: -9999px;
+  position: fixed;
 }

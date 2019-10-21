@@ -30,14 +30,4 @@ $(document).ready(function() {
       }
     ]
   });
-
-  $(".autoplay").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    centerPadding: "360px",
-    prevArrow: '<i class="fa fa-chevron-left arrow" aria-hidden="true"></i>',
-    nextArrow: '<i class="fa fa-chevron-right arrow" aria-hidden="true"></i>'
-  });
 });

@@ -1,66 +1,51 @@
-let slideIndex = 1;
-let myTimer;
-let slideshowContainer;
+const slider = document.querySelector("#slider"),
+  arrowLeft = document.querySelector("#arrow-left"),
+  arrowRight = document.querySelector("#arrow-right");
+let current = 0;
+let slideInterval;
+let slideTimeout;
 
-const plusSlides = n => {
-  clearInterval(myTimer);
-  if (n < 0) {
-    showSlides((slideIndex -= 1));
-  } else {
-    showSlides((slideIndex += 1));
-  }
-
-  if (n === -1) {
-    myTimer = setInterval(function() {
-      plusSlides(n + 2);
-    }, 3000);
-  } else {
-    myTimer = setInterval(function() {
-      plusSlides(n + 1);
-    }, 3000);
-  }
+const slideRight = () => {
+  if (current === 3) current = 0;
+  slider.style.left = `${-100 * current}%`;
+  current++;
 };
 
-const currentSlide = n => {
-  clearInterval(myTimer);
-  myTimer = setInterval(() => {
-    plusSlides(n + 1);
-  }, 3000);
-  showSlides((slideIndex = n));
+const slideLeft = () => {
+  if (current === 1) current = 3;
+  else current--;
+  slider.style.left = `${-100 * (current - 1)}%`;
 };
 
-const showSlides = n => {
-  const slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "block";
+const startSlider = () => {
+  slideInterval = setInterval(slideRight, 2500);
 };
 
-const pause = () => {
-  clearInterval(myTimer);
+arrowLeft.addEventListener("click", () => {
+  stopSlider();
+  slideLeft();
+  slideTimeout = setTimeout(startSlider, 500);
+});
+
+arrowRight.addEventListener("click", () => {
+  stopSlider();
+  slideRight();
+  slideTimeout = setTimeout(startSlider, 500);
+});
+
+const stopSlider = () => {
+  clearInterval(slideInterval);
+  clearTimeout(slideTimeout);
 };
 
-const resume = () => {
-  clearInterval(myTimer);
-  myTimer = setInterval(() => {
-    plusSlides(slideIndex);
-  }, 3000);
+slider.addEventListener("mouseenter", () => {
+  stopSlider();
+});
+
+slider.addEventListener("mouseleave", () => {
+  slideTimeout = setTimeout(startSlider, 500);
+});
+
+window.onload = () => {
+  arrowRight.click();
 };
-
-// window.onload = () => {
-//   showSlides(slideIndex);
-//   myTimer = setInterval(function() {
-//     plusSlides(1);
-//   }, 3000);
-
-//   slideshowContainer = document.getElementsByClassName("slideshow-inner")[0];
-//   slideshowContainer.addEventListener("mouseenter", pause);
-//   slideshowContainer.addEventListener("mouseleave", resume);
-// };
