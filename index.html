@@ -12,21 +12,32 @@
 
     <!-- Template's Stylesheets -->
 
-    <!-- <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="js/loaders/loader.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="js/slider/showcase-slider.css">
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="js/showcase-slider/showcase-slider.css" />
-    <link rel="stylesheet" href="js/vertical-slider/vertical-slider.css" />
 
     <!-- Template's Stylesheets END -->
   </head>
   <body>
+    <!-- Loader -->
+
+    <div class="over-loader loader-live">
+      <div class="loader">
+        <div class="loader-item style4">
+          <div class="cube1"></div>
+          <div class="cube2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loader END -->
+
     <div id="container">
       <div id="header">
         <img
@@ -45,63 +56,54 @@
 
       <!-- Showcase Slider -->
 
-      <div id="showcase-slider">
-        <i class="fa fa-chevron-left arrow" id="arrow-left" aria-hidden="true">
-        </i>
-        <div id="slider-container">
-          <div id="slider">
-            <div class="slide slide1">
-              <div class="description">
-                <p id="header-text">
-                  Awesome App for You <br />
-                  to Earn Easily
-                </p>
-                <p id="subheader-text">
-                  Description Text comes over here to Earn Easily
-                </p>
-                <img
-                  src="img/google-play.png"
-                  alt="Get it from Google Play"
-                  class="google-play-banner"
-                />
-              </div>
-              <img src="img/Screen Designs-HiRes-02.png" />
+      <div class="showcase-slider">
+          <i class="fa fa-chevron-left arrow prev" aria-hidden="true" onclick='plusSlides(-1)'></i>
+        <div class="slideshow-inner">
+          <div class="slide slide1">
+            <div class="description">
+              <p id="header-text">
+                Awesome App for You <br />
+                to Earn Easily
+              </p>
+              <p id="subheader-text">
+                Description Text comes over here to Earn Easily
+              </p>
+              <img
+                src="img/google-play.png"
+                alt="Get it from Google Play"
+                class="google-play-banner"
+              />
             </div>
-            <div class="slide slide2">
-              <img src="img/Screen Designs-HiRes-12.png" />
-            </div>
-            <div class="slide slide3">
-              <iframe
-                width="80%"
-                !important
-                height="80%"
-                !important
-                src="//www.youtube.com/embed/EOfCEhWq8sg"
-                frameborder="0"
-                allowfullscreen
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              ></iframe>
-            </div>
+            <img src="img/01.png" />
           </div>
+          <div class="slide slide2">
+            <iframe
+            width="80%"
+            !important
+            height="80%"
+            !important
+            src="//www.youtube.com/embed/EOfCEhWq8sg"
+            frameborder="0"
+            allowfullscreen
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+          </div>
+          </div>
+          <i class="fa fa-chevron-right arrow next" aria-hidden="true" onclick='plusSlides(1)'></i>
         </div>
-        <i
-          class="fa fa-chevron-right arrow"
-          id="arrow-right"
-          aria-hidden="true"
-        >
-        </i>
-      </div>
 
       <!-- Showcase Slider END -->
 
       <!-- Promo Cards -->
 
       <div id="promo-container">
-        <p id="promo-header-text">Exciting Features!</p>
+        <h2>Exciting Features!</h2>
         <div class="card-group">
           <div
             class="card"
             style="background: linear-gradient(to left, #fdc830, #f37335); top: -20px"
+            data-tilt
+            data-tilt-scale="1.1"
           >
             <p class="card-header">Lorem Ipsum</p>
             <p class="card-description">
@@ -114,6 +116,8 @@
           <div
             class="card"
             style="background: linear-gradient(to right, #56ab2f, #a8e063); top: 50px"
+            data-tilt
+            data-tilt-scale="1.1"
           >
             <p class="card-header">Lorem Ipsum</p>
             <p class="card-description">
@@ -126,6 +130,8 @@
           <div
             class="card"
             style="background: linear-gradient(to left, #56ccf2, #2f80ed); top: 50px"
+            data-tilt
+            data-tilt-scale="1.1"
           >
             <p class="card-header">Lorem Ipsum</p>
             <p class="card-description">
@@ -138,6 +144,8 @@
           <div
             class="card"
             style="background: linear-gradient(to right, #c0392b, #8e44ad); top: -20px"
+            data-tilt
+            data-tilt-scale="1.1"
           >
             <p class="card-header">Lorem Ipsum</p>
             <p class="card-description">
@@ -156,10 +164,10 @@
 
       <div id="app-instructions-container">
         <div id="screenshots">
-          <img src="img/Screen Designs-HiRes-10.png" />
+          <img src="img/09.png" />
         </div>
         <div id="app=instructions">
-          <div id="instruction-header-text">How Does This App Work?</div>
+          <h2>How Does This App Work?</h2>
 
           <!-- Vertical Slider -->
 
@@ -223,7 +231,7 @@
       <!-- How To Redeem -->
 
       <div id="redeem-container">
-        <p id="redeem-header">How To Redeem</p>
+        <h2>How To Redeem</h2>
         <div id="redeem-card-group">
           <div class="redeem-card">
             <div class="redeem-card-text">
@@ -235,10 +243,10 @@
                 reprehenderit nesciunt perferendis necessitatibus error dolorem?
               </p>
             </div>
-            <img src="img/Screen Designs-HiRes-11.png" />
+            <img src="img/10.png" />
           </div>
           <div class="redeem-card">
-            <img src="img/Screen Designs-HiRes-12.png" />
+            <img src="img/11.png" />
             <div class="redeem-card-text">
               <p class="redeem-header-text">Step 2: Heading Here</p>
               <p class="redeem-description">
@@ -257,7 +265,7 @@
       <!-- Video Player -->
 
       <div id="video-container">
-        <p id="video-header">Video Tutorial</p>
+        <h2>Video Tutorial</h2>
         <iframe
           width="80%"
           !important
@@ -274,49 +282,20 @@
       <!-- App Screenshots -->
 
       <div id="app-screenshots-container">
-        <p id="app-screenshots-header">
-          App Screenshots
-        </p>
-        <div id="showcase-slider">
-          <i
-            class="fa fa-chevron-left arrow"
-            aria-hidden="true"
-            id="arrow-left"
-          >
-          </i>
-          <div id="slider-container">
-            <div id="slider">
-              <div class="slide slide1">
-                <div class="description">
-                  <p id="header-text">
-                    Awesome App for You <br />
-                    to Earn Easily
-                  </p>
-                  <p id="subheader-text">
-                    Description Text comes over here to Earn Easily
-                  </p>
-                  <img
-                    src="img/google-play.png"
-                    alt="Get it from Google Play"
-                    class="google-play-banner"
-                  />
-                </div>
-                <img src="img/Screen Designs-HiRes-02.png" />
-              </div>
-              <div class="slide slide2">
-                <img src="img/Screen Designs-HiRes-10.png" />
-              </div>
-              <div class="slide slide3">
-                <img src="img/Screen Designs-HiRes-12.png" />
-              </div>
-            </div>
-          </div>
-          <i
-            class="fa fa-chevron-right arrow"
-            aria-hidden="true"
-            id="arrow-right"
-          >
-          </i>
+        <h2>App Screenshots</h2>
+        <div class="center-slider slider">
+          <img src="img/01.png" class="slide" />
+          <img src="img/03.png" class="slide" />
+          <img src="img/03.png" class="slide" />
+          <img src="img/04.png" class="slide" />
+          <img src="img/05.png" class="slide" />
+          <img src="img/06.png" class="slide" />
+          <img src="img/07.png" class="slide" />
+          <img src="img/08.png" class="slide" />
+          <img src="img/09.png" class="slide" />
+          <img src="img/10.png" class="slide" />
+          <img src="img/11.png" class="slide" />
+          <img src="img/12.png" class="slide" />
         </div>
       </div>
 
@@ -327,20 +306,67 @@
 
     <div id="footer">
       <img src="img/CallPay_Logo_-10.png" id="footer-logo" />
-      <div id="social-media-icons">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"> </i>
-        <i class="fa fa-instagram" aria-hidden="true"> </i>
+      <p style="font-size: 1.2rem; margin: 20px; text-align: center;">
+        Earn Money Easily!
+      </p>
+      <div style="display: flex; margin: 50px 0; flex-direction: column;">
+        <div style="margin-bottom: 30px">
+          <p class="tnc-header">Legal</p>
+          <div class="tnc-group">
+            <p>Help</p>
+            <p>FAQ</p>
+            <p>Disclaimer</p>
+            <p>Terms & Conditions</p>
+          </div>
+        </div>
+        <div>
+          <p class="tnc-header">About</p>
+          <div class="tnc-group">
+            <p>Features</p>
+            <p>Blog</p>
+            <p>Contact</p>
+            <p>Advertise</p>
+          </div>
+        </div>
       </div>
-      <p>&copy; Copyright CallPay 2019</p>
+      <div id="social-media-icons">
+        <i class="fa fa-twitter" aria-hidden="true"> </i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"> </i>
+        <i class="fa fa-linkedin" aria-hidden="true"> </i>
+        <i class="fa fa-youtube" aria-hidden="true"> </i>
+      </div>
+      <img
+        src="img/google-play.png"
+        alt="Get it from Google Play"
+        class="google-play-banner"
+      />
+      <p
+        style='text-transform: uppercase; margin: 20px 0; font-size: 1.2rem; font-family: "Mark-Bold"'
+      >
+        Download the App now
+      </p>
+      <div id="footer-bottom">
+        <p>CallPay &copy;. All rights reserved</p>
+        <p>Privacy Policy</p>
+      </div>
     </div>
 
     <!-- Footer END -->
 
     <!-- Template's Scripts -->
 
+    <script src="js/loaders/loader.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <!-- <script src="js/showcase-slider/showcase-slider.js"></script> -->
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/slider/slider.js"></script>
+    <script src='js/slider/showcase-slider.js'></script>
 
     <!-- Template's Scripts END  -->
   </body>
