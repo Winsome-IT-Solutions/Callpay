@@ -3,7 +3,6 @@
   height: 300px;
   margin: 0px auto;
   display: flex;
-  /* border: 1px solid grey; */
   justify-content: space-around;
   align-items: center;
   padding: 20px;
@@ -70,6 +69,18 @@ input {
 
 #three:checked ~ #push {
   margin-top: -600px;
+}
+
+#four:checked ~ #push {
+  margin-top: -900px;
+}
+
+#five:checked ~ #push {
+  margin-top: -1200px;
+}
+
+#six:checked ~ #push {
+  margin-top: -1500px;
 }
 
 .current {
