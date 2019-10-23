@@ -35,3 +35,7 @@ body {
   margin-top: 50px;
   margin-bottom: 20px;
 }
+
+h4 + p {
+  margin-bottom: 20px;
+}

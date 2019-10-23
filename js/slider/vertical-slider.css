@@ -30,6 +30,10 @@ label {
   cursor: pointer;
 }
 
+label img {
+  width: 20px;
+}
+
 #content-right {
   overflow: hidden;
 }
