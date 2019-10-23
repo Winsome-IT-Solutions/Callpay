@@ -27,3 +27,44 @@ $(document).ready(function() {
     }
   });
 });
+
+$("#home-btn").click(function() {
+  $([document.documentElement, document.body]).animate(
+    {
+      scrollTop: 0
+    },
+    500
+  );
+});
+
+$("#features-btn").click(function() {
+  $([document.documentElement, document.body]).animate(
+    {
+      scrollTop:
+        $("#promo-container").offset().top - $("#header").innerHeight() - 50
+    },
+    500
+  );
+});
+
+$("#instructions-btn").click(function() {
+  $([document.documentElement, document.body]).animate(
+    {
+      scrollTop:
+        $("#app-instructions-container").offset().top -
+        $("#header").innerHeight() -
+        50
+    },
+    500
+  );
+});
+
+$("#redeem-btn").click(function() {
+  $([document.documentElement, document.body]).animate(
+    {
+      scrollTop:
+        $("#redeem-container").offset().top - $("#header").innerHeight() - 50
+    },
+    500
+  );
+});

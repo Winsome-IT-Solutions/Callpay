@@ -415,10 +415,6 @@ button:focus {
   margin: 30px 0;
 }
 
-/* #social-media-icons i:not(:last-child) {
-  margin-right: 40px;
-} */
-
 #social-media-icons a:not(:last-child) {
   margin-right: 40px;
 }
