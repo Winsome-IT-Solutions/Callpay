@@ -7,8 +7,8 @@ $(document).ready(function() {
     focusOnSelect: true,
     dots: false,
     infinite: true,
-    prevArrow: '<i class="fa fa-chevron-left arrow" aria-hidden="true"></i>',
-    nextArrow: '<i class="fa fa-chevron-right arrow" aria-hidden="true"></i>',
+    prevArrow: '<div class="arrowleft arrow"></div>',
+    nextArrow: '<div class="arrowright arrow"></div>',
     responsive: [
       {
         breakpoint: 768,
