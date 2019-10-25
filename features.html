@@ -12,6 +12,7 @@
 
     <!-- Template's Stylesheets -->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -43,11 +44,11 @@
         ><img src="img/CallPay_Logo_-10.png" alt="CallPay Logo" id="brand-logo"
       /></a>
       <div id="navbar">
-        <p>Home</p>
-        <p>Features</p>
-        <p>How It Works</p>
-        <p>How To Redeem</p>
-        <button>Download Now</button>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="index.html#promo-container">Features</a></p>
+        <p><a href="index.html#app-instructions-container">How It Works</a></p>
+        <p><a href="index.html#redeem-container">How To Redeem</a></p>
+        <button style='background-color: #ffffff; color: #333333;'>Download Now</button>
       </div>
     </div>
 
@@ -107,61 +108,65 @@
     <!-- Footer -->
 
     <div id="footer">
-      <img src="img/CallPay_Logo_-10.png" id="footer-logo" />
-      <p style="font-size: 1.2rem; margin: 20px; text-align: center;">
-        Money Making App
-      </p>
-      <div style="display: flex; margin: 50px 0; flex-direction: column;">
-        <div style="margin-bottom: 30px">
-          <p class="tnc-header">Legal</p>
-          <div class="tnc-group">
-            <p><a href="help.html">Help</a></p>
-            <p><a href="faq.html">FAQ</a></p>
-            <p><a href="disclaimer.html">Disclaimer</a></p>
-            <p><a href="terms.html">Terms & Conditions</a></p>
-          </div>
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-4 text-center">                           
+          <img src="img/google-play.png"  alt="Get it from Google Play"  class="google-play-banner" />
+          <p style='text-transform: uppercase; margin: 20px 0; font-size: 1.2rem; font-family: "Mark-Bold"' >
+            Download the App now
+          </p>
+          <div id="social-media-icons">
+              <a href="https://www.twitter.com/callpay"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/callpay.in/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/callpayindia/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/company/callpayindia"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="https://www.youtube.com/channel/UCeYhrwfyTClu-w6RUAYIlSQ"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </div>
+        
         </div>
-        <div>
-          <p class="tnc-header">About</p>
-          <div class="tnc-group">
-            <p><a href="features.html">Features</a></p>
-            <p><a href="blog.html">Blog</a></p>
-            <p><a href="contact.html">Contact</a></p>
-            <p><a href="advertising.html"> Advertise</a></p>
-          </div>
+
+          <div class="col-lg-4 logosector text-center">
+            <img src="img/footer-logo.png" id="footer-logo" />
+            <div class="mnapp">   Money Making App   </div>
+           
+         
+           </div>
+
+              <div class="col-lg-4 ">
+
+         
+                  <h4 class="tnc-header">Legal</h4>
+                  <ul class="tnc-group">
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                   </ul>
+                
+                  <h4 class="tnc-header">About</h4>
+                  <ul class="tnc-group">
+                      <li><a href="features.html">Features</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="advertising.html"> Advertise</a></li>
+                    </ul>
+
+                  
+                    
+                    </div>
+               
+              
+         </div>
+
         </div>
-      </div>
-      <div id="social-media-icons">
-        <a href="https://www.twitter.com/callpay"
-          ><i class="fa fa-twitter" aria-hidden="true"></i
-        ></a>
-        <a href="https://www.facebook.com/callpay.in/"
-          ><i class="fa fa-facebook" aria-hidden="true"></i
-        ></a>
-        <a href="https://www.instagram.com/callpayindia/"
-          ><i class="fa fa-instagram" aria-hidden="true"></i
-        ></a>
-        <a href="https://www.linkedin.com/company/callpayindia"
-          ><i class="fa fa-linkedin" aria-hidden="true"></i
-        ></a>
-        <a href="https://www.youtube.com/channel/UCeYhrwfyTClu-w6RUAYIlSQ"
-          ><i class="fa fa-youtube" aria-hidden="true"></i
-        ></a>
-      </div>
-      <img
-        src="img/google-play.png"
-        alt="Get it from Google Play"
-        class="google-play-banner"
-      />
-      <p
-        style='text-transform: uppercase; margin: 20px 0; font-size: 1.2rem; font-family: "Mark-Bold"'
-      >
-        Download the App now
-      </p>
+      
+    </div>
       <div id="footer-bottom">
         <p>CallPay &copy;. All rights reserved</p>
         <p><a href="privacy-policy.html">Privacy Policy</a></p>
       </div>
+  
     </div>
 
     <a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
@@ -170,11 +175,8 @@
 
     <!-- Template's Scripts -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/loaders/loader.js"></script>
     <script src="js/script.js"></script>
 

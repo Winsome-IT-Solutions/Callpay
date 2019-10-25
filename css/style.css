@@ -11,7 +11,6 @@ darkblue: #25326F
   src: url("../fonts/Oswald-Bold.ttf");
 }
 
-
 @font-face {
   font-family: "Oswald-Regular";
   src: url("../fonts/Oswald-Regular.ttf");
@@ -26,7 +25,6 @@ darkblue: #25326F
   font-family: "Oswald-Light";
   src: url("../fonts/Oswald-Light.otf");
 }
-
 
 @font-face {
   font-family: "Oswald-Regular";
@@ -52,7 +50,7 @@ darkblue: #25326F
 }
 
 body {
-  background: url("../img/banner.png");
+  background: url("../img/banner-old.png");
   background-size: contain;
   background-repeat: no-repeat;
   overflow-x: hidden;
@@ -106,13 +104,16 @@ button:focus {
   border: none;
   border-radius: 100px;
   padding: 10px 20px;
-  background-color:#090606;
-  color:#fff;
+  background-color: #090606;
+  color: #fff;
   font-size: 16px;
   cursor: pointer;
   transition: font-size 0.2s ease-in-out;
 }
-#navbar button:hover{ background: #fff; color: #000;}
+#navbar button:hover {
+  background: #fff;
+  color: #000;
+}
 .sticky {
   background-color: #333333;
   padding: 18px 0 !important;
@@ -151,7 +152,6 @@ button:focus {
   margin-right: 10px;
 }
 
-
 #promo-container h2 {
   margin-bottom: 50px;
   color: #666666;
@@ -179,29 +179,31 @@ button:focus {
 
 .card-header {
   font-size: 22px;
-  margin-bottom: 20px;  
-  text-transform: uppercase;  
-  font-family: 'Oswald-Regular';  
-  font-weight: 300;  
-  text-align: center;  
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald-Regular";
+  font-weight: 300;
+  text-align: center;
   color: #040303;
+  transition: color 0.2s ease-in-out;
 }
-.card-description{
+.card-description {
   font-family: "Mark-Regular";
-font-size: 16px;
-text-align: center;
-color: #1e1d1d;
-line-height: 24px;
+  font-size: 16px;
+  text-align: center;
+  color: #1e1d1d;
+  line-height: 24px;
 }
-.card:hover h4{ color: #fff;;}
+
+.card:hover .card-header {
+  color: #ffffff;
+}
+
 /* How App Works Styles */
 
-.appinstructions
-{
-  background: #c3e4fbcc;
-padding: 40px 0;
+.appinstructions {
+  padding: 40px 0;
 }
-
 
 #app-instructions-container::before {
   content: "";
@@ -222,16 +224,16 @@ padding: 40px 0;
 }
 .instruction-header {
   font-size: 32px;
-font-family: 'Oswald-Regular';
-font-weight: 300;
-padding-bottom: 15px;
-color: #353535;
+  font-family: "Oswald-Regular";
+  font-weight: 300;
+  padding-bottom: 15px;
+  color: #353535;
 }
-.instruction{
+.instruction {
   font-size: 16px;
-width: 65%;
-line-height: 24px;
-color: #5b5a5a;
+  width: 65%;
+  line-height: 24px;
+  color: #5b5a5a;
 }
 
 #screenshots img {
@@ -246,11 +248,11 @@ color: #5b5a5a;
 
 #app-instructions-container h2 {
   text-align: left;
-color: #666666;
-font-size: 32px;
-font-family: "Oswald-Regular";
-font-weight: 300;
-text-indent: 88px;
+  color: #666666;
+  font-size: 32px;
+  font-family: "Oswald-Regular";
+  font-weight: 300;
+  text-indent: 88px;
 }
 
 #app-instructions {
@@ -284,7 +286,7 @@ text-indent: 88px;
   font-size: 22px;
   color: #ffffff;
   margin-bottom: 30px;
-  border-radius:0 20px 20px 0 ;
+  border-radius: 0 20px 20px 0;
   text-align: right;
 }
 .redeem-header-text-right {
@@ -293,26 +295,29 @@ text-indent: 88px;
   font-size: 22px;
   color: #ffffff;
   margin-bottom: 30px;
-  border-radius:20px 0 0 20px ;
+  border-radius: 20px 0 0 20px;
 }
-.nopadding{ padding: 0 !important;}
-#redeem-container img{ width: 100%;}
+.nopadding {
+  padding: 0 !important;
+}
+#redeem-container img {
+  width: 100%;
+}
 
 .redeem-description-left {
   width: 100%;
-padding-left: 15%;
-font-size: 18px;
-line-height: 26px;
-text-align: right;
+  padding-left: 15%;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: right;
 }
 .redeem-description-right {
   width: 100%;
-padding-right: 15%;
-font-size: 18px;
-line-height: 26px;
-text-align: left;
+  padding-right: 15%;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
 }
-
 
 .redeem-card {
   display: flex;
@@ -340,10 +345,10 @@ text-align: left;
   z-index: -1;
   transform: rotate(-12deg);
 }
-#video-container iframe{
+#video-container iframe {
   width: 100%;
-height: 550px;
-border-radius: 35px;
+  height: 550px;
+  border-radius: 35px;
 }
 
 #video-container {
@@ -425,12 +430,34 @@ border-radius: 35px;
 .center-slider .child {
   width: 100%;
 }
-.arrow-left{ background: url('../img/left-arrow.png'); width: 128px; height: 156px;}
-.arrow-right{ background: url('../img/right-arrow.png'); width: 128px; height: 156px; }
+.arrow-left {
+  background: url("../img/left-arrow.png");
+  width: 128px;
+  height: 156px;
+}
+.arrow-right {
+  background: url("../img/right-arrow.png");
+  width: 128px;
+  height: 156px;
+}
 
-.arrowleft{ background: url('../img/left-arrow.png'); width: 128px; height: 156px; position: absolute; left: -8%; }
-.arrowright{ background: url('../img/right-arrow.png'); width: 128px; height: 156px;  position: absolute;  right: -8%; }
-.mnapp{ text-indent: 85px;}
+.arrowleft {
+  background: url("../img/left-arrow.png");
+  width: 128px;
+  height: 156px;
+  position: absolute;
+  left: -8%;
+}
+.arrowright {
+  background: url("../img/right-arrow.png");
+  width: 128px;
+  height: 156px;
+  position: absolute;
+  right: -8%;
+}
+.mnapp {
+  text-indent: 85px;
+}
 /* Footer */
 
 #footer {
@@ -446,12 +473,12 @@ border-radius: 35px;
 
 .tnc-header {
   text-transform: uppercase;
-margin-bottom: 15px;
-color:#fff;
-font-size: 18px;
-position: relative;
-float: left;
-width: 100%;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  float: left;
+  width: 100%;
 }
 
 .tnc-header::after {
@@ -467,16 +494,24 @@ width: 100%;
 }
 
 .tnc-group {
-justify-content: left;
-list-style-type: none;
-width: 100%;
-margin-bottom: 15px;
-float: left;
+  justify-content: left;
+  list-style-type: none;
+  width: 100%;
+  margin-bottom: 15px;
+  float: left;
 }
-.tnc-group li{ padding-right: 15px; float: left;}
-.tnc-group li a:hover{ color: #00b4db; text-decoration: underline;}
+.tnc-group li {
+  padding-right: 15px;
+  float: left;
+}
+.tnc-group li a:hover {
+  color: #00b4db;
+  text-decoration: underline;
+}
 
-.logosector{ padding-top: 3%;}
+.logosector {
+  padding-top: 3%;
+}
 
 .tnc-group p {
   cursor: pointer;
@@ -528,7 +563,10 @@ float: left;
   text-align: center;
   color: #888484;
 }
-#footer-bottom p{ margin: 0; padding: 0;}
+#footer-bottom p {
+  margin: 0;
+  padding: 0;
+}
 #footer-bottom p:last-child {
   margin-top: 5px;
   font-size: 1.2rem;
