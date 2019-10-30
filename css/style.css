@@ -50,7 +50,7 @@ darkblue: #25326F
 }
 
 body {
-  background: url("../img/banner-old.png");
+  background: url("../img/banner.png");
   background-size: contain;
   background-repeat: no-repeat;
   overflow-x: hidden;
@@ -65,7 +65,10 @@ a {
 button:focus {
   outline: 0;
 }
-
+.featured-bg {
+  background: url("../img/featured-bg.png") repeat;
+  width: 100%;
+}
 /* Header Style */
 
 #header {
