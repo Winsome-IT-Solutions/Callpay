@@ -108,12 +108,15 @@ button:focus {
   color: #fff;
   font-size: 16px;
   cursor: pointer;
-  transition: font-size 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    font-size 0.2s ease-in-out;
 }
+
 #navbar button:hover {
-  background: #fff;
+  background-color: #fff;
   color: #000;
 }
+
 .sticky {
   background-color: #333333;
   padding: 18px 0 !important;
@@ -135,7 +138,7 @@ button:focus {
 
 /* Container Style */
 
-#container {
+.container {
   width: 80%;
   margin: 0 auto;
 }
@@ -143,7 +146,7 @@ button:focus {
 /* Promo Cards Style */
 
 #promo-container {
-  margin: 20% 0px 10% 0;
+  margin: 100px 0;
 }
 
 #promo-container h2::before {
@@ -155,7 +158,7 @@ button:focus {
 #promo-container h2 {
   margin-bottom: 50px;
   color: #666666;
-  font-size: 32px;
+  font-size: 2rem;
   font-family: "Oswald-Regular";
   font-weight: 300;
 }
@@ -178,32 +181,25 @@ button:focus {
 }
 
 .card-header {
-  font-size: 22px;
+  font-size: 1.2rem;
   margin-bottom: 20px;
   text-transform: uppercase;
-  font-family: "Oswald-Regular";
-  font-weight: 300;
+  font-family: "Mark-Bold";
   text-align: center;
-  color: #040303;
-  transition: color 0.2s ease-in-out;
+  transition: font-size 0.2s ease-in-out;
 }
+
 .card-description {
   font-family: "Mark-Regular";
-  font-size: 16px;
   text-align: center;
-  color: #1e1d1d;
   line-height: 24px;
 }
 
 .card:hover .card-header {
-  color: #ffffff;
+  font-size: 1.3rem;
 }
 
 /* How App Works Styles */
-
-.appinstructions {
-  padding: 40px 0;
-}
 
 #app-instructions-container::before {
   content: "";
@@ -222,13 +218,15 @@ button:focus {
   align-items: center;
   position: relative;
 }
+
 .instruction-header {
-  font-size: 32px;
+  font-size: 2rem;
   font-family: "Oswald-Regular";
   font-weight: 300;
   padding-bottom: 15px;
   color: #353535;
 }
+
 .instruction {
   font-size: 16px;
   width: 65%;
@@ -259,6 +257,10 @@ button:focus {
   width: 100%;
 }
 
+#roadmap-container {
+  position: relative;
+}
+
 /* Redeem Styles */
 
 #redeem-container {
@@ -272,7 +274,7 @@ button:focus {
 }
 
 #redeem-container h2 {
-  font-size: 32px;
+  font-size: 2rem;
   font-family: "Oswald-Regular";
   font-weight: 300;
   color: #666666;
@@ -280,57 +282,57 @@ button:focus {
   margin-bottom: 45px;
 }
 
-.redeem-header-text-left {
-  background: linear-gradient(to left, #00b4db, #0083b0);
-  padding: 15px;
-  font-size: 22px;
-  color: #ffffff;
-  margin-bottom: 30px;
-  border-radius: 0 20px 20px 0;
-  text-align: right;
-}
-.redeem-header-text-right {
-  background: linear-gradient(to right, #00b4db, #0083b0);
-  padding: 15px;
-  font-size: 22px;
-  color: #ffffff;
-  margin-bottom: 30px;
-  border-radius: 20px 0 0 20px;
-}
-.nopadding {
-  padding: 0 !important;
-}
-#redeem-container img {
-  width: 100%;
-}
-
-.redeem-description-left {
-  width: 100%;
-  padding-left: 15%;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: right;
-}
-.redeem-description-right {
-  width: 100%;
-  padding-right: 15%;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: left;
+#redeem-card-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .redeem-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.redeem-card-text {
   width: 100%;
 }
 
 .redeem-card img {
   width: 300px;
+}
+
+.redeem-header {
+  background: linear-gradient(to left, #00b4db, #0083b0);
+  padding: 15px;
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.redeem-card:first-child .redeem-header {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: right;
+}
+
+.redeem-card:last-child .redeem-header {
+  text-align: left;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.redeem-description {
+  width: 100%;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+.redeem-card:first-child .redeem-description {
+  padding-left: 50px;
+}
+
+.redeem-card:last-child .redeem-description {
+  padding-right: 50px;
 }
 
 /* Video Style */
@@ -344,11 +346,6 @@ button:focus {
   height: 100%;
   z-index: -1;
   transform: rotate(-12deg);
-}
-#video-container iframe {
-  width: 100%;
-  height: 550px;
-  border-radius: 35px;
 }
 
 #video-container {
@@ -364,7 +361,7 @@ button:focus {
 }
 
 #video-container h2 {
-  font-size: 32px;
+  font-size: 2rem;
   font-family: "Oswald-Regular";
   font-weight: 300;
   margin-bottom: 50px;
@@ -385,7 +382,7 @@ button:focus {
 }
 
 #app-screenshots-container h2 {
-  font-size: 32px;
+  font-size: 2rem;
   font-family: "Oswald-Regular";
   font-weight: 300;
   margin-bottom: 50px;
@@ -430,41 +427,27 @@ button:focus {
 .center-slider .child {
   width: 100%;
 }
-.arrow-left {
-  background: url("../img/left-arrow.png");
-  width: 128px;
-  height: 156px;
-}
-.arrow-right {
-  background: url("../img/right-arrow.png");
-  width: 128px;
-  height: 156px;
-}
 
-.arrowleft {
-  background: url("../img/left-arrow.png");
-  width: 128px;
-  height: 156px;
-  position: absolute;
-  left: -8%;
-}
-.arrowright {
-  background: url("../img/right-arrow.png");
-  width: 128px;
-  height: 156px;
-  position: absolute;
-  right: -8%;
-}
-.mnapp {
-  text-indent: 85px;
-}
 /* Footer */
 
 #footer {
   background-color: #444242;
-  padding-top: 40px;
+  padding: 40px;
   color: #ffffff;
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer .section {
+  width: 100%;
+  text-align: center;
+}
+
+#footer .section:nth-child(3) {
+  text-align: left;
+  padding-left: 50px;
 }
 
 #footer-logo {
@@ -500,35 +483,15 @@ button:focus {
   margin-bottom: 15px;
   float: left;
 }
+
 .tnc-group li {
   padding-right: 15px;
   float: left;
 }
+
 .tnc-group li a:hover {
   color: #00b4db;
   text-decoration: underline;
-}
-
-.logosector {
-  padding-top: 3%;
-}
-
-.tnc-group p {
-  cursor: pointer;
-  transition: color 0.2s ease-in-out;
-  margin-right: 30px;
-}
-
-.tnc-group p:last-child {
-  margin-right: 0;
-}
-
-.tnc-group p:hover {
-  color: #101010;
-}
-
-#social-media-icons {
-  margin: 30px 0;
 }
 
 #social-media-icons a:not(:last-child) {
@@ -563,10 +526,12 @@ button:focus {
   text-align: center;
   color: #888484;
 }
+
 #footer-bottom p {
   margin: 0;
   padding: 0;
 }
+
 #footer-bottom p:last-child {
   margin-top: 5px;
   font-size: 1.2rem;
@@ -579,21 +544,13 @@ button:focus {
   text-decoration: underline;
 }
 
-.scrollup {
+#scrollup {
   z-index: 999;
   right: 2rem;
   bottom: 1rem;
   display: none;
-  width: 3.625rem;
-  height: 3.625rem;
-  border-radius: 1.875rem;
-  border-top-left-radius: 1.875rem;
-  border-top-right-radius: 1.875rem;
-  border-bottom-right-radius: 1.875rem;
-  border-bottom-left-radius: 1.875rem;
-  background: #000 url(../img/up-arrow.png) no-repeat center 47%;
-  background-size: auto;
-  background-size: 2.125rem 2.125rem;
   text-indent: -9999px;
   position: fixed;
+  width: 50px;
+  cursor: pointer;
 }

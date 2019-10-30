@@ -6,7 +6,7 @@ body {
   background: #333333;
 }
 
-#container {
+.container {
   text-align: justify;
   padding-bottom: 45px;
   background: url(../img/bgcontent.png) bottom right no-repeat;
@@ -16,7 +16,7 @@ body {
   padding-right: 15px;
 }
 
-#container h1 {
+.container h1 {
   font-family: "Oswald-Regular";
   border-left: 8px solid #0374b3;
   margin-top: 45px;
@@ -31,7 +31,7 @@ body {
   background-position: right center;
 }
 
-#container h3 {
+.container h3 {
   margin-top: 50px;
   margin-bottom: 20px;
 }

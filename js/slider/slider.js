@@ -7,8 +7,8 @@ $(document).ready(function() {
     focusOnSelect: true,
     dots: false,
     infinite: true,
-    prevArrow: '<div class="arrowleft arrow"></div>',
-    nextArrow: '<div class="arrowright arrow"></div>',
+    prevArrow: "<img src='img/left-arrow.png' class='arrow' />",
+    nextArrow: "<img src='img/right-arrow.png' class='arrow' />",
     responsive: [
       {
         breakpoint: 768,

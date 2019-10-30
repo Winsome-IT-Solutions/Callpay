@@ -6,13 +6,13 @@ let slideInterval;
 let slideTimeout;
 
 const slideRight = () => {
-  if (current === 3) current = 0;
+  if (current === 4) current = 0;
   slider.style.left = `${-100 * current}%`;
   current++;
 };
 
 const slideLeft = () => {
-  if (current === 1) current = 3;
+  if (current === 1) current = 4;
   else current--;
   slider.style.left = `${-100 * (current - 1)}%`;
 };
